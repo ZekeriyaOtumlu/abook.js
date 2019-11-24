@@ -1,0 +1,25 @@
+{
+  "name": "abook",
+  "version": "1.0.0",
+  "description": "MySQL-Node.js",
+  "main": "bamazonCustomer.js",
+  "dependencies": {
+    "cli-table2": "^0.2.0",
+    "inquirer": "^7.0.0",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZekeriyaOtumlu/abook.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZekeriyaOtumlu/abook.js/issues"
+  },
+  "homepage": "https://github.com/ZekeriyaOtumlu/abook.js#readme"
+}
