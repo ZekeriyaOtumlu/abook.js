@@ -37,12 +37,8 @@ function displayAllItems() {
         }
         console.log(table.toString());
         productID();
-
     });
-
-
 }
-
 function productID() {
     inquirer.prompt({
         name: "item_id",
@@ -56,7 +52,6 @@ function productID() {
             if (err) throw err;
             if (res.length === 0) {
                 console.log("Please Enter Valid Product ID");
-
                 productID();
             } else {
                 inquirer
@@ -73,7 +68,6 @@ function productID() {
                         } else {
                             console.log(res[0].product_name + " purchased");
                             console.log(chosenQuantity + " Unit(s) @ $" + res[0].price);
-
                             var newQuantity = res[0].stock_quantity - chosenQuantity;
                             connection.query(
                                 "UPDATE products SET stock_quantity = ? WHERE item_id =?", [newQuantity, res[0].item_id],
